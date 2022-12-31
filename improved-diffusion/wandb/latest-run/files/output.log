@@ -1,0 +1,23 @@
+creating data loader...
+load data **************************************************
+the type of rev_tokenizer is <class 'NoneType'>
+the type of model22 is <class 'NoneType'>
+hello loading text data.
+hello loading e2e-tgt.
+loading dataset from simple e2e dataset
+loading form the TRAIN set
+[['The', 'Vaults', 'pub', 'near', 'Café', 'Adriatic', 'has', 'a', '5', 'star', 'rating', '.', 'Prices', 'start', 'at', '£', '30', '.', '\n'], ['Close', 'to', 'Café', 'Brazil', ',', 'The', 'Cambridge', 'Blue', 'pub', 'serves', 'delicious', 'Tuscan', 'Beef', 'for', 'the', 'cheap', 'price', 'of', '£', '10.50', '.', 'Delicious', 'Pub', 'food', '.', '\n']]
+2974 821
+save the vocab to diffusion_models/diff_e2e-tgt_block_rand16_transformer_lr0.0001_0.0_2000_sqrt_Lsimple_h128_s2_d0.1_sd102_xstart_e2e/vocab.json
+initializing the random embeddings Embedding(821, 16)
+save the random encoder to diffusion_models/diff_e2e-tgt_block_rand16_transformer_lr0.0001_0.0_2000_sqrt_Lsimple_h128_s2_d0.1_sd102_xstart_e2e/random_emb.torch
+[[0, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 15, 21, 1], [0, 22, 23, 8, 24, 25, 4, 26, 27, 6, 28, 29, 2, 2, 30, 31, 32, 33, 34, 19, 2, 15, 2, 35, 36, 15, 21, 1]]
+padding mode is block
+8
+loading from diffusion_models/diff_e2e-tgt_block_rand16_transformer_lr0.0001_0.0_2000_sqrt_Lsimple_h128_s2_d0.1_sd102_xstart_e2e/vocab.json
+821
+types of model2 and tokenizer are <class 'torch.nn.modules.sparse.Embedding'> and <class 'dict'>, respectively
+rev_tokenizer updated, its type is <class 'dict'> now!
+loading from diffusion_models/diff_e2e-tgt_block_rand16_transformer_lr0.0001_0.0_2000_sqrt_Lsimple_h128_s2_d0.1_sd102_xstart_e2e/vocab.json
+821
+Embedding(821, 16) False

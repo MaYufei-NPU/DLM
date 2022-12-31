@@ -1,0 +1,27 @@
+creating data loader...
+load data **************************************************
+hello loading text data.
+hello loading e2e-tgt.
+loading dataset from simple e2e dataset
+loading form the TRAIN set
+[['The', 'Vaults', 'pub', 'near', 'Café', 'Adriatic', 'has', 'a', '5', 'star', 'rating', '.', 'Prices', 'start', 'at', '£', '30', '.', '\n'], ['Close', 'to', 'Café', 'Brazil', ',', 'The', 'Cambridge', 'Blue', 'pub', 'serves', 'delicious', 'Tuscan', 'Beef', 'for', 'the', 'cheap', 'price', 'of', '£', '10.50', '.', 'Delicious', 'Pub', 'food', '.', '\n']]
+2974 821
+save the vocab to diffusion_models/diff_e2e-tgt_block_rand16_transformer_lr0.0001_0.0_2000_sqrt_Lsimple_h128_s2_d0.1_sd102_xstart_e2e/vocab.json
+initializing the random embeddings Embedding(821, 16)
+save the random encoder to diffusion_models/diff_e2e-tgt_block_rand16_transformer_lr0.0001_0.0_2000_sqrt_Lsimple_h128_s2_d0.1_sd102_xstart_e2e/random_emb.torch
+[[0, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 15, 21, 1], [0, 22, 23, 8, 24, 25, 4, 26, 27, 6, 28, 29, 2, 2, 30, 31, 32, 33, 34, 19, 2, 15, 2, 35, 36, 15, 21, 1]]
+padding mode is block
+Traceback (most recent call last):
+  File "scripts/train.py", line 208, in <module>
+    main()
+  File "scripts/train.py", line 106, in main
+    next(data)
+  File "/data1/mayufei1/Diffusion-LM-main/improved-diffusion/improved_diffusion/text_datasets.py", line 56, in load_data_text
+    training_data, model = get_corpus_rocstory(data_args, model, image_size,
+  File "/data1/mayufei1/Diffusion-LM-main/improved-diffusion/improved_diffusion/text_datasets.py", line 603, in get_corpus_rocstory
+    result_train_lst = helper_tokenize_encode(sentence_lst, vocab_dict, model, image_size**2, data_args, padding_mode)
+  File "/data1/mayufei1/Diffusion-LM-main/improved-diffusion/improved_diffusion/text_datasets.py", line 252, in helper_tokenize_encode
+    concatenated_examples = {k: sum(group_lst[k], []) for k in group_lst.keys()}
+  File "/data1/mayufei1/Diffusion-LM-main/improved-diffusion/improved_diffusion/text_datasets.py", line 252, in <dictcomp>
+    concatenated_examples = {k: sum(group_lst[k], []) for k in group_lst.keys()}
+KeyboardInterrupt

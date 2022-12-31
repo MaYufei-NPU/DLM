@@ -1,0 +1,138 @@
+2022-12-23 16:56:52,835 INFO    StreamThr :25781 [internal.py:wandb_internal():87] W&B internal server running at pid: 25781, started at: 2022-12-23 16:56:52.834453
+2022-12-23 16:56:52,839 DEBUG   HandlerThread:25781 [handler.py:handle_request():139] handle_request: status
+2022-12-23 16:56:52,842 DEBUG   SenderThread:25781 [sender.py:send_request():317] send_request: status
+2022-12-23 16:56:52,845 DEBUG   SenderThread:25781 [sender.py:send():303] send: header
+2022-12-23 16:56:52,845 INFO    WriterThread:25781 [datastore.py:open_for_write():75] open: /data1/mayufei1/Diffusion-LM-main/improved-diffusion/wandb/run-20221223_165652-1n6p66ef/run-1n6p66ef.wandb
+2022-12-23 16:56:52,846 DEBUG   SenderThread:25781 [sender.py:send():303] send: run
+2022-12-23 16:56:57,832 DEBUG   HandlerThread:25781 [handler.py:handle_request():139] handle_request: keepalive
+2022-12-23 16:56:58,815 DEBUG   HandlerThread:25781 [handler.py:handle_request():139] handle_request: check_version
+2022-12-23 16:56:58,819 INFO    SenderThread:25781 [dir_watcher.py:__init__():216] watching files in: /data1/mayufei1/Diffusion-LM-main/improved-diffusion/wandb/run-20221223_165652-1n6p66ef/files
+2022-12-23 16:56:58,819 INFO    SenderThread:25781 [sender.py:_start_run_threads():928] run started: 1n6p66ef with start time 1671785812.828091
+2022-12-23 16:56:58,819 DEBUG   SenderThread:25781 [sender.py:send():303] send: summary
+2022-12-23 16:56:58,819 INFO    SenderThread:25781 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-23 16:56:58,820 DEBUG   SenderThread:25781 [sender.py:send_request():317] send_request: check_version
+2022-12-23 16:56:59,820 INFO    Thread-13 :25781 [dir_watcher.py:_on_file_created():275] file/dir created: /data1/mayufei1/Diffusion-LM-main/improved-diffusion/wandb/run-20221223_165652-1n6p66ef/files/wandb-summary.json
+2022-12-23 16:57:03,535 DEBUG   HandlerThread:25781 [handler.py:handle_request():139] handle_request: run_start
+2022-12-23 16:57:03,540 DEBUG   HandlerThread:25781 [system_info.py:__init__():31] System info init
+2022-12-23 16:57:03,541 DEBUG   HandlerThread:25781 [system_info.py:__init__():46] System info init done
+2022-12-23 16:57:03,541 INFO    HandlerThread:25781 [system_monitor.py:start():150] Starting system monitor
+2022-12-23 16:57:03,541 INFO    SystemMonitor:25781 [system_monitor.py:_start():116] Starting system asset monitoring threads
+2022-12-23 16:57:03,541 INFO    HandlerThread:25781 [system_monitor.py:probe():171] Collecting system info
+2022-12-23 16:57:03,542 INFO    SystemMonitor:25781 [interfaces.py:start():168] Started cpu
+2022-12-23 16:57:03,543 INFO    SystemMonitor:25781 [interfaces.py:start():168] Started disk
+2022-12-23 16:57:03,544 INFO    SystemMonitor:25781 [interfaces.py:start():168] Started gpu
+2022-12-23 16:57:03,544 INFO    SystemMonitor:25781 [interfaces.py:start():168] Started memory
+2022-12-23 16:57:03,545 INFO    SystemMonitor:25781 [interfaces.py:start():168] Started network
+2022-12-23 16:57:03,626 DEBUG   HandlerThread:25781 [system_info.py:probe():195] Probing system
+2022-12-23 16:57:03,635 DEBUG   HandlerThread:25781 [git.py:repo():40] git repository is invalid
+2022-12-23 16:57:03,635 DEBUG   HandlerThread:25781 [system_info.py:probe():241] Probing system done
+2022-12-23 16:57:03,636 DEBUG   HandlerThread:25781 [system_monitor.py:probe():180] {'os': 'Linux-4.15.0-112-generic-x86_64-with-glibc2.17', 'python': '3.8.15', 'heartbeatAt': '2022-12-23T08:57:03.626340', 'startedAt': '2022-12-23T08:56:52.814451', 'docker': None, 'cuda': None, 'args': ('--checkpoint_path', 'diffusion_models/diff_e2e-tgt_block_rand16_transformer_lr0.0001_0.0_2000_sqrt_Lsimple_h128_s2_d0.1_sd102_xstart_e2e', '--model_arch', 'transformer', '--modality', 'e2e-tgt', '--save_interval', '50000', '--lr', '0.0001', '--batch_size', '64', '--diffusion_steps', '2000', '--noise_schedule', 'sqrt', '--use_kl', 'False', '--learn_sigma', 'False', '--image_size', '8', '--num_channels', '128', '--seed', '102', '--dropout', '0.1', '--in_channel', '16', '--out_channel', '16', '--padding_mode', 'block', '--experiment', 'random', '--lr_anneal_steps', '200000', '--weight_decay', '0.0', '--num_res_blocks', '2', '--predict_xstart', 'True', '--training_mode', 'e2e', '--vocab_size', '821', '--e2e_train', '../datasets/e2e_data'), 'state': 'running', 'program': 'scripts/train.py', 'codePath': 'scripts/train.py', 'host': 'gpu3090', 'username': 'cxy', 'executable': '/home/cxy/anaconda3/envs/myf_dlm/bin/python', 'cpu_count': 48, 'cpu_count_logical': 96, 'cpu_freq': {'current': 1.7834479166666666, 'min': 1000.0, 'max': 2401.0}, 'cpu_freq_per_core': [{'current': 1.0, 'min': 1000.0, 'max': 2401.0}, {'current': 3.627, 'min': 1000.0, 'max': 2401.0}, {'current': 1.042, 'min': 1000.0, 'max': 2401.0}, {'current': 0.999, 'min': 1000.0, 'max': 2401.0}, {'current': 2.093, 'min': 1000.0, 'max': 2401.0}, {'current': 1.001, 'min': 1000.0, 'max': 2401.0}, {'current': 1.001, 'min': 1000.0, 'max': 2401.0}, {'current': 1.001, 'min': 1000.0, 'max': 2401.0}, {'current': 1.0, 'min': 1000.0, 'max': 2401.0}, {'current': 3.082, 'min': 1000.0, 'max': 2401.0}, {'current': 3.602, 'min': 1000.0, 'max': 2401.0}, {'current': 1.0, 'min': 1000.0, 'max': 2401.0}, {'current': 3.694, 'min': 1000.0, 'max': 2401.0}, {'current': 1.611, 'min': 1000.0, 'max': 2401.0}, {'current': 1.001, 'min': 1000.0, 'max': 2401.0}, {'current': 1.0, 'min': 1000.0, 'max': 2401.0}, {'current': 3.627, 'min': 1000.0, 'max': 2401.0}, {'current': 1.001, 'min': 1000.0, 'max': 2401.0}, {'current': 1.001, 'min': 1000.0, 'max': 2401.0}, {'current': 1.001, 'min': 1000.0, 'max': 2401.0}, {'current': 2.254, 'min': 1000.0, 'max': 2401.0}, {'current': 1.0, 'min': 1000.0, 'max': 2401.0}, {'current': 1.0, 'min': 1000.0, 'max': 2401.0}, {'current': 3.623, 'min': 1000.0, 'max': 2401.0}, {'current': 1.0, 'min': 1000.0, 'max': 2401.0}, {'current': 1.0, 'min': 1000.0, 'max': 2401.0}, {'current': 1.088, 'min': 1000.0, 'max': 2401.0}, {'current': 1.0, 'min': 1000.0, 'max': 2401.0}, {'current': 1.026, 'min': 1000.0, 'max': 2401.0}, {'current': 3.694, 'min': 1000.0, 'max': 2401.0}, {'current': 3.711, 'min': 1000.0, 'max': 2401.0}, {'current': 1.912, 'min': 1000.0, 'max': 2401.0}, {'current': 1.733, 'min': 1000.0, 'max': 2401.0}, {'current': 1.0, 'min': 1000.0, 'max': 2401.0}, {'current': 3.639, 'min': 1000.0, 'max': 2401.0}, {'current': 3.639, 'min': 1000.0, 'max': 2401.0}, {'current': 1.004, 'min': 1000.0, 'max': 2401.0}, {'current': 1.0, 'min': 1000.0, 'max': 2401.0}, {'current': 1.001, 'min': 1000.0, 'max': 2401.0}, {'current': 1.409, 'min': 1000.0, 'max': 2401.0}, {'current': 3.654, 'min': 1000.0, 'max': 2401.0}, {'current': 1.0, 'min': 1000.0, 'max': 2401.0}, {'current': 1.0, 'min': 1000.0, 'max': 2401.0}, {'current': 3.654, 'min': 1000.0, 'max': 2401.0}, {'current': 1.0, 'min': 1000.0, 'max': 2401.0}, {'current': 1.0, 'min': 1000.0, 'max': 2401.0}, {'current': 1.088, 'min': 1000.0, 'max': 2401.0}, {'current': 2.034, 'min': 1000.0, 'max': 2401.0}, {'current': 1.046, 'min': 1000.0, 'max': 2401.0}, {'current': 3.695, 'min': 1000.0, 'max': 2401.0}, {'current': 1.045, 'min': 1000.0, 'max': 2401.0}, {'current': 1.0, 'min': 1000.0, 'max': 2401.0}, {'current': 2.283, 'min': 1000.0, 'max': 2401.0}, {'current': 1.0, 'min': 1000.0, 'max': 2401.0}, {'current': 1.0, 'min': 1000.0, 'max': 2401.0}, {'current': 1.0, 'min': 1000.0, 'max': 2401.0}, {'current': 1.0, 'min': 1000.0, 'max': 2401.0}, {'current': 2.897, 'min': 1000.0, 'max': 2401.0}, {'current': 3.702, 'min': 1000.0, 'max': 2401.0}, {'current': 1.0, 'min': 1000.0, 'max': 2401.0}, {'current': 3.647, 'min': 1000.0, 'max': 2401.0}, {'current': 1.329, 'min': 1000.0, 'max': 2401.0}, {'current': 1.0, 'min': 1000.0, 'max': 2401.0}, {'current': 1.0, 'min': 1000.0, 'max': 2401.0}, {'current': 3.401, 'min': 1000.0, 'max': 2401.0}, {'current': 1.0, 'min': 1000.0, 'max': 2401.0}, {'current': 1.001, 'min': 1000.0, 'max': 2401.0}, {'current': 1.001, 'min': 1000.0, 'max': 2401.0}, {'current': 2.303, 'min': 1000.0, 'max': 2401.0}, {'current': 1.0, 'min': 1000.0, 'max': 2401.0}, {'current': 1.001, 'min': 1000.0, 'max': 2401.0}, {'current': 3.33, 'min': 1000.0, 'max': 2401.0}, {'current': 1.0, 'min': 1000.0, 'max': 2401.0}, {'current': 1.0, 'min': 1000.0, 'max': 2401.0}, {'current': 1.086, 'min': 1000.0, 'max': 2401.0}, {'current': 1.0, 'min': 1000.0, 'max': 2401.0}, {'current': 1.0, 'min': 1000.0, 'max': 2401.0}, {'current': 3.668, 'min': 1000.0, 'max': 2401.0}, {'current': 3.7, 'min': 1000.0, 'max': 2401.0}, {'current': 2.348, 'min': 1000.0, 'max': 2401.0}, {'current': 1.429, 'min': 1000.0, 'max': 2401.0}, {'current': 0.999, 'min': 1000.0, 'max': 2401.0}, {'current': 3.631, 'min': 1000.0, 'max': 2401.0}, {'current': 3.14, 'min': 1000.0, 'max': 2401.0}, {'current': 1.0, 'min': 1000.0, 'max': 2401.0}, {'current': 1.0, 'min': 1000.0, 'max': 2401.0}, {'current': 1.0, 'min': 1000.0, 'max': 2401.0}, {'current': 1.373, 'min': 1000.0, 'max': 2401.0}, {'current': 3.396, 'min': 1000.0, 'max': 2401.0}, {'current': 1.0, 'min': 1000.0, 'max': 2401.0}, {'current': 1.0, 'min': 1000.0, 'max': 2401.0}, {'current': 3.684, 'min': 1000.0, 'max': 2401.0}, {'current': 1.0, 'min': 1000.0, 'max': 2401.0}, {'current': 1.001, 'min': 1000.0, 'max': 2401.0}, {'current': 1.053, 'min': 1000.0, 'max': 2401.0}, {'current': 3.221, 'min': 1000.0, 'max': 2401.0}], 'disk': {'total': 519.8647613525391, 'used': 39.33993911743164}, 'gpu': 'NVIDIA GeForce RTX 3090', 'gpu_count': 8, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 3090', 'memory_total': 25447170048}, {'name': 'NVIDIA GeForce RTX 3090', 'memory_total': 25447170048}, {'name': 'NVIDIA GeForce RTX 3090', 'memory_total': 25447170048}, {'name': 'NVIDIA GeForce RTX 3090', 'memory_total': 25447170048}, {'name': 'NVIDIA GeForce RTX 3090', 'memory_total': 25447170048}, {'name': 'NVIDIA GeForce RTX 3090', 'memory_total': 25447170048}, {'name': 'NVIDIA GeForce RTX 3090', 'memory_total': 25447170048}, {'name': 'NVIDIA GeForce RTX 3090', 'memory_total': 25447170048}], 'memory': {'total': 314.5705451965332}}
+2022-12-23 16:57:03,636 INFO    HandlerThread:25781 [system_monitor.py:probe():181] Finished collecting system info
+2022-12-23 16:57:03,636 INFO    HandlerThread:25781 [system_monitor.py:probe():184] Publishing system info
+2022-12-23 16:57:03,636 DEBUG   HandlerThread:25781 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2022-12-23 16:57:03,637 DEBUG   HandlerThread:25781 [system_info.py:_save_pip():67] Saving pip packages done
+2022-12-23 16:57:03,637 DEBUG   HandlerThread:25781 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2022-12-23 16:57:03,824 INFO    Thread-13 :25781 [dir_watcher.py:_on_file_created():275] file/dir created: /data1/mayufei1/Diffusion-LM-main/improved-diffusion/wandb/run-20221223_165652-1n6p66ef/files/conda-environment.yaml
+2022-12-23 16:57:03,824 INFO    Thread-13 :25781 [dir_watcher.py:_on_file_created():275] file/dir created: /data1/mayufei1/Diffusion-LM-main/improved-diffusion/wandb/run-20221223_165652-1n6p66ef/files/requirements.txt
+2022-12-23 16:57:05,572 DEBUG   HandlerThread:25781 [system_info.py:_save_conda():86] Saving conda packages done
+2022-12-23 16:57:05,574 INFO    HandlerThread:25781 [system_monitor.py:probe():186] Finished publishing system info
+2022-12-23 16:57:05,577 DEBUG   SenderThread:25781 [sender.py:send():303] send: files
+2022-12-23 16:57:05,577 INFO    SenderThread:25781 [sender.py:_save_file():1171] saving file wandb-metadata.json with policy now
+2022-12-23 16:57:05,588 DEBUG   HandlerThread:25781 [handler.py:handle_request():139] handle_request: stop_status
+2022-12-23 16:57:05,589 DEBUG   SenderThread:25781 [sender.py:send_request():317] send_request: stop_status
+2022-12-23 16:57:05,824 INFO    Thread-13 :25781 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/mayufei1/Diffusion-LM-main/improved-diffusion/wandb/run-20221223_165652-1n6p66ef/files/conda-environment.yaml
+2022-12-23 16:57:05,825 INFO    Thread-13 :25781 [dir_watcher.py:_on_file_created():275] file/dir created: /data1/mayufei1/Diffusion-LM-main/improved-diffusion/wandb/run-20221223_165652-1n6p66ef/files/wandb-metadata.json
+2022-12-23 16:57:07,434 DEBUG   SenderThread:25781 [sender.py:send():303] send: telemetry
+2022-12-23 16:57:07,435 DEBUG   SenderThread:25781 [sender.py:send():303] send: config
+2022-12-23 16:57:07,438 DEBUG   SenderThread:25781 [sender.py:send():303] send: telemetry
+2022-12-23 16:57:07,825 INFO    Thread-13 :25781 [dir_watcher.py:_on_file_created():275] file/dir created: /data1/mayufei1/Diffusion-LM-main/improved-diffusion/wandb/run-20221223_165652-1n6p66ef/files/output.log
+2022-12-23 16:57:09,827 INFO    Thread-13 :25781 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/mayufei1/Diffusion-LM-main/improved-diffusion/wandb/run-20221223_165652-1n6p66ef/files/output.log
+2022-12-23 16:57:18,647 INFO    Thread-16 :25781 [upload_job.py:push():143] Uploaded file /tmp/tmph7y60ormwandb/1mw93hex-wandb-metadata.json
+2022-12-23 16:57:52,028 DEBUG   HandlerThread:25781 [handler.py:handle_request():139] handle_request: stop_status
+2022-12-23 16:57:53,037 DEBUG   HandlerThread:25781 [handler.py:handle_request():139] handle_request: poll_exit
+2022-12-23 16:57:57,293 ERROR   SenderThread:25781 [retry.py:__call__():154] Retry attempt failed:
+Traceback (most recent call last):
+  File "/home/cxy/anaconda3/envs/myf_dlm/lib/python3.8/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "/home/cxy/anaconda3/envs/myf_dlm/lib/python3.8/site-packages/urllib3/util/connection.py", line 95, in create_connection
+    raise err
+  File "/home/cxy/anaconda3/envs/myf_dlm/lib/python3.8/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    sock.connect(sa)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/cxy/anaconda3/envs/myf_dlm/lib/python3.8/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "/home/cxy/anaconda3/envs/myf_dlm/lib/python3.8/site-packages/urllib3/connectionpool.py", line 386, in _make_request
+    self._validate_conn(conn)
+  File "/home/cxy/anaconda3/envs/myf_dlm/lib/python3.8/site-packages/urllib3/connectionpool.py", line 1042, in _validate_conn
+    conn.connect()
+  File "/home/cxy/anaconda3/envs/myf_dlm/lib/python3.8/site-packages/urllib3/connection.py", line 358, in connect
+    self.sock = conn = self._new_conn()
+  File "/home/cxy/anaconda3/envs/myf_dlm/lib/python3.8/site-packages/urllib3/connection.py", line 179, in _new_conn
+    raise ConnectTimeoutError(
+urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPSConnection object at 0x7f30a4195a60>, 'Connection to api.wandb.ai timed out. (connect timeout=10)')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/cxy/anaconda3/envs/myf_dlm/lib/python3.8/site-packages/requests/adapters.py", line 489, in send
+    resp = conn.urlopen(
+  File "/home/cxy/anaconda3/envs/myf_dlm/lib/python3.8/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    retries = retries.increment(
+  File "/home/cxy/anaconda3/envs/myf_dlm/lib/python3.8/site-packages/urllib3/util/retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7f30a4195a60>, 'Connection to api.wandb.ai timed out. (connect timeout=10)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/cxy/anaconda3/envs/myf_dlm/lib/python3.8/site-packages/wandb/sdk/lib/retry.py", line 113, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "/home/cxy/anaconda3/envs/myf_dlm/lib/python3.8/site-packages/wandb/sdk/internal/internal_api.py", line 209, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+  File "/home/cxy/anaconda3/envs/myf_dlm/lib/python3.8/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "/home/cxy/anaconda3/envs/myf_dlm/lib/python3.8/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "/home/cxy/anaconda3/envs/myf_dlm/lib/python3.8/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/transport/requests.py", line 38, in execute
+    request = requests.post(self.url, **post_args)
+  File "/home/cxy/anaconda3/envs/myf_dlm/lib/python3.8/site-packages/requests/api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+  File "/home/cxy/anaconda3/envs/myf_dlm/lib/python3.8/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/cxy/anaconda3/envs/myf_dlm/lib/python3.8/site-packages/requests/sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/cxy/anaconda3/envs/myf_dlm/lib/python3.8/site-packages/requests/sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/cxy/anaconda3/envs/myf_dlm/lib/python3.8/site-packages/requests/adapters.py", line 553, in send
+    raise ConnectTimeout(e, request=request)
+requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7f30a4195a60>, 'Connection to api.wandb.ai timed out. (connect timeout=10)'))
+2022-12-23 16:57:58,039 DEBUG   HandlerThread:25781 [handler.py:handle_request():139] handle_request: keepalive
+2022-12-23 16:58:03,041 DEBUG   HandlerThread:25781 [handler.py:handle_request():139] handle_request: keepalive
+2022-12-23 16:58:03,545 DEBUG   SystemMonitor:25781 [system_monitor.py:_start():130] Starting system metrics aggregation loop
+2022-12-23 16:58:05,919 WARNING StreamThr :25781 [internal.py:is_dead():386] Internal process exiting, parent pid 25407 disappeared
+2022-12-23 16:58:05,919 ERROR   StreamThr :25781 [internal.py:wandb_internal():146] Internal process shutdown.
+2022-12-23 16:58:06,552 INFO    WriterThread:25781 [datastore.py:close():279] close: /data1/mayufei1/Diffusion-LM-main/improved-diffusion/wandb/run-20221223_165652-1n6p66ef/run-1n6p66ef.wandb
+2022-12-23 16:58:06,555 INFO    HandlerThread:25781 [handler.py:finish():814] shutting down handler
+2022-12-23 16:59:51,527 DEBUG   SenderThread:25781 [sender.py:send_request():317] send_request: stop_status
+2022-12-23 16:59:51,892 INFO    Thread-13 :25781 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/mayufei1/Diffusion-LM-main/improved-diffusion/wandb/run-20221223_165652-1n6p66ef/files/config.yaml
+2022-12-23 16:59:52,417 INFO    SenderThread:25781 [sender.py:finish():1331] shutting down sender
+2022-12-23 16:59:53,623 INFO    SenderThread:25781 [dir_watcher.py:finish():362] shutting down directory watcher
+2022-12-23 16:59:53,893 INFO    Thread-13 :25781 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/mayufei1/Diffusion-LM-main/improved-diffusion/wandb/run-20221223_165652-1n6p66ef/files/output.log
+2022-12-23 16:59:53,894 INFO    SenderThread:25781 [dir_watcher.py:finish():392] scan: /data1/mayufei1/Diffusion-LM-main/improved-diffusion/wandb/run-20221223_165652-1n6p66ef/files
+2022-12-23 16:59:53,894 INFO    SenderThread:25781 [dir_watcher.py:finish():406] scan save: /data1/mayufei1/Diffusion-LM-main/improved-diffusion/wandb/run-20221223_165652-1n6p66ef/files/config.yaml config.yaml
+2022-12-23 16:59:53,894 INFO    SenderThread:25781 [dir_watcher.py:finish():406] scan save: /data1/mayufei1/Diffusion-LM-main/improved-diffusion/wandb/run-20221223_165652-1n6p66ef/files/wandb-summary.json wandb-summary.json
+2022-12-23 16:59:53,902 INFO    SenderThread:25781 [dir_watcher.py:finish():406] scan save: /data1/mayufei1/Diffusion-LM-main/improved-diffusion/wandb/run-20221223_165652-1n6p66ef/files/requirements.txt requirements.txt
+2022-12-23 16:59:53,903 INFO    SenderThread:25781 [dir_watcher.py:finish():406] scan save: /data1/mayufei1/Diffusion-LM-main/improved-diffusion/wandb/run-20221223_165652-1n6p66ef/files/wandb-metadata.json wandb-metadata.json
+2022-12-23 16:59:53,903 INFO    SenderThread:25781 [dir_watcher.py:finish():406] scan save: /data1/mayufei1/Diffusion-LM-main/improved-diffusion/wandb/run-20221223_165652-1n6p66ef/files/output.log output.log
+2022-12-23 16:59:53,909 INFO    SenderThread:25781 [dir_watcher.py:finish():406] scan save: /data1/mayufei1/Diffusion-LM-main/improved-diffusion/wandb/run-20221223_165652-1n6p66ef/files/conda-environment.yaml conda-environment.yaml
+2022-12-23 16:59:53,918 INFO    SenderThread:25781 [file_pusher.py:finish():168] shutting down file pusher
+2022-12-23 16:59:53,918 INFO    SenderThread:25781 [file_pusher.py:join():173] waiting for file pusher
+2022-12-23 16:59:54,886 INFO    Thread-20 :25781 [upload_job.py:push():143] Uploaded file /data1/mayufei1/Diffusion-LM-main/improved-diffusion/wandb/run-20221223_165652-1n6p66ef/files/output.log
+2022-12-23 16:59:54,933 INFO    Thread-17 :25781 [upload_job.py:push():143] Uploaded file /data1/mayufei1/Diffusion-LM-main/improved-diffusion/wandb/run-20221223_165652-1n6p66ef/files/config.yaml
+2022-12-23 16:59:54,957 INFO    Thread-18 :25781 [upload_job.py:push():143] Uploaded file /data1/mayufei1/Diffusion-LM-main/improved-diffusion/wandb/run-20221223_165652-1n6p66ef/files/wandb-summary.json
+2022-12-23 16:59:54,978 INFO    Thread-21 :25781 [upload_job.py:push():143] Uploaded file /data1/mayufei1/Diffusion-LM-main/improved-diffusion/wandb/run-20221223_165652-1n6p66ef/files/conda-environment.yaml
+2022-12-23 16:59:54,982 INFO    Thread-19 :25781 [upload_job.py:push():143] Uploaded file /data1/mayufei1/Diffusion-LM-main/improved-diffusion/wandb/run-20221223_165652-1n6p66ef/files/requirements.txt

@@ -1,0 +1,72 @@
+creating data loader...
+load data **************************************************
+hello loading text data.
+hello loading e2e-tgt.
+loading dataset from simple e2e dataset
+loading form the TRAIN set
+[['The', 'Vaults', 'pub', 'near', 'Café', 'Adriatic', 'has', 'a', '5', 'star', 'rating', '.', 'Prices', 'start', 'at', '£', '30', '.', '\n'], ['Close', 'to', 'Café', 'Brazil', ',', 'The', 'Cambridge', 'Blue', 'pub', 'serves', 'delicious', 'Tuscan', 'Beef', 'for', 'the', 'cheap', 'price', 'of', '£', '10.50', '.', 'Delicious', 'Pub', 'food', '.', '\n']]
+2974 821
+save the vocab to diffusion_models/diff_e2e-tgt_block_rand16_transformer_lr0.0001_0.0_2000_sqrt_Lsimple_h128_s2_d0.1_sd102_xstart_e2e/vocab.json
+initializing the random embeddings Embedding(821, 16)
+save the random encoder to diffusion_models/diff_e2e-tgt_block_rand16_transformer_lr0.0001_0.0_2000_sqrt_Lsimple_h128_s2_d0.1_sd102_xstart_e2e/random_emb.torch
+[[0, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 15, 21, 1], [0, 22, 23, 8, 24, 25, 4, 26, 27, 6, 28, 29, 2, 2, 30, 31, 32, 33, 34, 19, 2, 15, 2, 35, 36, 15, 21, 1]]
+padding mode is block
+8
+loading from diffusion_models/diff_e2e-tgt_block_rand16_transformer_lr0.0001_0.0_2000_sqrt_Lsimple_h128_s2_d0.1_sd102_xstart_e2e/vocab.json
+821
+loading from diffusion_models/diff_e2e-tgt_block_rand16_transformer_lr0.0001_0.0_2000_sqrt_Lsimple_h128_s2_d0.1_sd102_xstart_e2e/vocab.json
+821
+Embedding(821, 16) False
+training...
+Traceback (most recent call last):
+  File "scripts/train.py", line 208, in <module>
+    main()
+  File "scripts/train.py", line 143, in main
+    TrainLoop(
+  File "/data1/mayufei1/Diffusion-LM-main/improved-diffusion/improved_diffusion/train_util.py", line 176, in run_loop
+    self.run_step(batch, cond)
+  File "/data1/mayufei1/Diffusion-LM-main/improved-diffusion/improved_diffusion/train_util.py", line 195, in run_step
+    self.forward_backward(batch, cond)
+  File "/data1/mayufei1/Diffusion-LM-main/improved-diffusion/improved_diffusion/train_util.py", line 253, in forward_backward
+    losses = compute_losses()
+  File "/data1/mayufei1/Diffusion-LM-main/improved-diffusion/improved_diffusion/respace.py", line 99, in training_losses
+    return super().training_losses(self._wrap_model(model), *args, **kwargs)
+  File "/data1/mayufei1/Diffusion-LM-main/improved-diffusion/improved_diffusion/gaussian_diffusion.py", line 240, in training_losses
+    return self.training_losses_e2e(model, *args, **kwargs)
+  File "/data1/mayufei1/Diffusion-LM-main/improved-diffusion/improved_diffusion/gaussian_diffusion.py", line 1510, in training_losses_e2e
+    model_output = model(x_t, self._scale_timesteps(t), **model_kwargs)
+  File "/data1/mayufei1/Diffusion-LM-main/improved-diffusion/improved_diffusion/respace.py", line 131, in __call__
+    return self.model(x, new_ts, **kwargs)
+  File "/home/cxy/anaconda3/envs/myf_dlm/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/cxy/anaconda3/envs/myf_dlm/lib/python3.8/site-packages/torch/nn/parallel/distributed.py", line 1008, in forward
+    output = self._run_ddp_forward(*inputs, **kwargs)
+  File "/home/cxy/anaconda3/envs/myf_dlm/lib/python3.8/site-packages/torch/nn/parallel/distributed.py", line 969, in _run_ddp_forward
+    return module_to_run(*inputs[0], **kwargs[0])
+  File "/home/cxy/anaconda3/envs/myf_dlm/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/data1/mayufei1/Diffusion-LM-main/improved-diffusion/improved_diffusion/transformer_model2.py", line 911, in forward
+    input_trans_hidden_states = self.input_transformers(emb_inputs).last_hidden_state
+  File "/home/cxy/anaconda3/envs/myf_dlm/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/data1/mayufei1/Diffusion-LM-main/transformers/src/transformers/models/bert/modeling_bert.py", line 586, in forward
+    layer_outputs = layer_module(
+  File "/home/cxy/anaconda3/envs/myf_dlm/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/data1/mayufei1/Diffusion-LM-main/transformers/src/transformers/models/bert/modeling_bert.py", line 514, in forward
+    layer_output = apply_chunking_to_forward(
+  File "/data1/mayufei1/Diffusion-LM-main/transformers/src/transformers/modeling_utils.py", line 2465, in apply_chunking_to_forward
+    return forward_fn(*input_tensors)
+  File "/data1/mayufei1/Diffusion-LM-main/transformers/src/transformers/models/bert/modeling_bert.py", line 527, in feed_forward_chunk
+    layer_output = self.output(intermediate_output, attention_output)
+  File "/home/cxy/anaconda3/envs/myf_dlm/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/data1/mayufei1/Diffusion-LM-main/transformers/src/transformers/models/bert/modeling_bert.py", line 442, in forward
+    hidden_states = self.LayerNorm(hidden_states + input_tensor)
+  File "/home/cxy/anaconda3/envs/myf_dlm/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/cxy/anaconda3/envs/myf_dlm/lib/python3.8/site-packages/torch/nn/modules/normalization.py", line 189, in forward
+    return F.layer_norm(
+  File "/home/cxy/anaconda3/envs/myf_dlm/lib/python3.8/site-packages/torch/nn/functional.py", line 2503, in layer_norm
+    return torch.layer_norm(input, normalized_shape, weight, bias, eps, torch.backends.cudnn.enabled)
+RuntimeError: CUDA out of memory. Tried to allocate 12.00 MiB (GPU 0; 23.70 GiB total capacity; 3.45 GiB already allocated; 4.56 MiB free; 3.52 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
